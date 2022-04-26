@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by Gordon</title>
+  <link rel="stylesheet" href="./course.css">
+ <link rel="icon" href="favicon.ico">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<nav>
+  <ul>
+       <li><a href="Home.html"><i class="fas fa-home" aria-hidden="true"></i> Home</a></li>
+    <li><a href="Course.html" class="active">Couse</a></li>
+    <li><a href="Relation.html">Relation</a></li>
+  </ul>
+</nav>
+<div class="w3-content w3-display-container">
+
+  <img class="mySlides" src="css1.jpg" style="width:50%">
+  <img class="mySlides" src="css2.jpg" style="width:50%">
+  <img class="mySlides" src="css3.jpg" style="width:50%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<div class='content'>
+<img src="school.jpg" width="100" height="90">
+  <h3 class='byline'> company </h3>
+  <h2 > Course </h2>
+<img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F763c1985deac315051729772b44e393ce0f9b074483fd-Sze9XZ_fw658&refer=http%3A%2F%2Fhbimg.b0.upaiyun.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1653463973&t=5aba602916898ba6a53d4f0d8177208e" width="500" height="200">
+<p>1.Programming in C language</p>
+<p>C language programming is an introductory language for programmers, which makes it easier for learners to understand. Of course, it can also design some advanced application software and system software. C programming can also help us learn other computer languages, such as the familiar java language vb language design, so C language is a necessary language for beginners.</p>
+<p>2.Computer network</p>
+<p>It is a comprehensive applied science, which not only makes direct use of communication theory and technology, computer science and technology, but also involves logic, operations research, statistics, model theory, graph theory, information theory, cybernetics, simulation, artificial intelligence, cognitive science, neural network and other disciplines.</p>
+<p>3.SQL Server</p>
+<p>This course is the main course of computer network technology major, which mainly cultivates students' ability of database management and application, and the ability of developing database application system and management information system in combination with advanced programming language. It is the foundation of B/S and C/S application development database course of computer network technology major.</p>
+<p>4.CAD drawing</p>
+<p>Through the study of CAD drawing course, students can acquire basic knowledge of CAD, such as basic drawing commands, graphic editing commands, layer setting, text annotation knowledge, drawing and printing of architectural and structural drawings, etc.</p>
+<p>5.Software engineering</p>
+<p>Software Engineering is a discipline concentrating on the study of software development and maintenance as well as software management. This course belongs to the teaching part specified by the Guiding Teaching Plan for the Computer Science and Technology Specialty.</p>
+<p>6.Artificial intelligence</p>
+<p>The purpose of this course is to enable students to form a comprehensive and clear systematic understanding of artificial intelligence on the basis of existing computer knowledge, master the basic concepts, principles and methods of artificial intelligence, and understand the new progress and new direction of research and application of artificial intelligence.</p> 
+<div class='image'>
+<!-- partial -->
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>
+
+<footer>  
+Gordon（Lin Qibin）
+  </footer> 
